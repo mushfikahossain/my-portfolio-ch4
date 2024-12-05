@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Mushfika Hossain</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="themeToggle" id="themeToggle">Switch Theme</button>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hey! I'm Mushfika, currently a student enrolled in Computer Programming at Humber, and this portfolio is for the course "Web Programming and Design"!  So far throughout the semester, we've learned various details of web development with HTML, CSS, and JavaScript.  I hope to learn much more in the future and showcase my progress through web pages like this one!</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" alt="Profile">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section"> 
+            <h2>Projects</h2>
+        
+            <div class="filter-buttons">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="complete">Completed</button>
+                <button class="filter-btn" data-category="incomplete">Incomplete</button>
+            </div>
+        
+            <div class="projects-grid">
+                <div class="project" data-category="complete">
+                    <img src="Registration Form.png" alt="Registration Form" loading="lazy">
+                    <h3>Registration Form</h3>
+                    <button class="showButton">Details</button>
+                    <div class="projectDetails" style="display: none">
+                        <p>This is one of my earliest projects from this class! It started with a simple registration form with HTML, then became my first experience working with CSS.</p>
+                        <a href="https://mushfikahossain.github.io/lab-css-fundamentals/" target="_blank">View Project</a>
+                    </div>
+                </div>
+        
+                <div class="project" data-category="complete">
+                    <img src="Storage Assignment.png" alt="Storage Assignment" loading="lazy">
+                    <h3>Name Storage</h3>
+                    <button class="showButton">Details</button>
+                    <div class="projectDetails" style="display: none">
+                        <p>This project is relatively recent, where I learned how to implement APIs into my webpages. This one, in particular, works with Local Storage.</p>
+                        <a href="https://mushfikahossain.github.io/storage-assignment/" target="_blank">View Project</a>
+                    </div>
+                </div>
+        
+                <div class="project" data-category="incomplete">
+                    <img src="To Do List.png" alt="To Do List" loading="lazy">
+                    <h3>To Do List</h3>
+                    <button class="showButton">Details</button>
+                    <div class="projectDetails" style="display: none">
+                        <p>This project is one I'm currently working on with my group. So far, it's not completed, and we're still adding more features and tweaking the design, but I'm super proud with how I implemented the CSS! Especially since it looks (almost) identical to our brainstorm! Below is our pseudo-website:</p>
+                        <a href="https://docs.google.com/drawings/d/1cArY7NLE8fmB_d93waOI62XgAoEmeCWaKpAtvGsBsgI/edit?usp=sharing" target="_blank">View Comparison</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+                <p id="successMessage" class="success"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mushfika Hossain</p>
+    </footer>
+</body>
+</html>
